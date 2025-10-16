@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salon 803 — All Services</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #2aa3a6 0%, #1d7d82 45%, #6b4b3e 100%);
+      color: #0f172a;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: #fff;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+    }
+
+    header h1 {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-family: "Playfair Display", serif;
+      margin-bottom: 0.5rem;
+    }
+
+    .services-container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: #1d7d82;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+      color: #444;
+    }
+
+    .price {
+      font-weight: 700;
+      color: #6b4b3e;
+      font-size: 1.1rem;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 2rem 0;
+      color: #eee;
+      opacity: 0.9;
+    }
+
+    .btn-back {
+      display: block;
+      width: fit-content;
+      margin: 3rem auto;
+      padding: 0.9rem 1.8rem;
+      background: #ef4444;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background: #dc2626;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Salon 803 — Full Service Menu & Pricing</h1>
+    <p>Explore our complete list of services below. Your beauty, our expertise.</p>
+  </header>
+
+  <div class="services-container">
+    <div class="service-card">
+      <h2>Traditional Sew-In</h2>
+      <p>Classic protective style with natural-looking results.</p>
+      <p class="price">$75</p>
+    </div>
+    <div class="service-card">
+      <h2>Versatile Sew-In</h2>
+      <p>Flexible styling options for any occasion.</p>
+      <p class="price">$115</p>
+    </div>
+    <div class="service-card">
+      <h2>Closure Sew-In</h2>
+      <p>Seamless closure for a natural finish.</p>
+      <p class="price">$110</p>
+    </div>
+    <div class="service-card">
+      <h2>Frontal Sew-In</h2>
+      <p>Hairline perfection with frontal installation.</p>
+      <p class="price">$125</p>
+    </div>
+    <div class="service-card">
+      <h2>Closure Wig Install</h2>
+      <p>Professional wig installation with closure.</p>
+      <p class="price">$135</p>
+    </div>
+    <div class="service-card">
+      <h2>Frontal Wig Install</h2>
+      <p>Flawless frontal wig application.</p>
+      <p class="price">$145</p>
+    </div>
+    <div class="service-card">
+      <h2>Traditional Quick Weave</h2>
+      <p>Fast, beautiful protective styling.</p>
+      <p class="price">$65</p>
+    </div>
+    <div class="service-card">
+      <h2>Closure Quick Weave</h2>
+      <p>Quick weave with natural closure.</p>
+      <p class="price">$75</p>
+    </div>
+    <div class="service-card">
+      <h2>Frontal Quick Weave</h2>
+      <p>Quick weave with frontal piece.</p>
+      <p class="price">$85</p>
+    </div>
+    <div class="service-card">
+      <h2>Hair Wash</h2>
+      <p>Deep cleansing and conditioning treatment.</p>
+      <p class="price">$25</p>
+    </div>
+    <div class="service-card">
+      <h2>Circle Braids</h2>
+      <p>Intricate braiding patterns.</p>
+      <p class="price">$15</p>
+    </div>
+    <div class="service-card">
+      <h2>Blow Out</h2>
+      <p>Professional blow dry and styling.</p>
+      <p class="price">$45</p>
+    </div>
+    <div class="service-card">
+      <h2>Silk Press</h2>
+      <p>Smooth, silky straight styling.</p>
+      <p class="price">$35</p>
+    </div>
+    <div class="service-card">
+      <h2>Take Down</h2>
+      <p>Safe and gentle style removal.</p>
+      <p class="price">$15</p>
+    </div>
+    <div class="service-card">
+      <h2>Detailed Cut</h2>
+      <p>Precision cutting and shaping.</p>
+      <p class="price">$10</p>
+    </div>
+    <div class="service-card">
+      <h2>With Adhesive</h2>
+      <p>Secure adhesive application.</p>
+      <p class="price">$10</p>
+    </div>
+    <div class="service-card">
+      <h2>Thick Hair</h2>
+      <p>Additional service for thick hair.</p>
+      <p class="price">$5</p>
+    </div>
+  </div>
+
+  <p class="note">* Prices may vary based on hair length, texture, or additional services.</p>
+
+  <a href="index.html" class="btn-back">← Back to Home</a>
+</body>
+</html>
